@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of a FireGento e.V. module.
+ *
+ * This FireGento e.V. module is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ *
+ * This script is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * @category  FireGento
+ * @package   FireGento_SampleModule
+ * @author    FireGento Team <team@firegento.com>
+ * @copyright 2013 FireGento Team (http://www.firegento.com)
+ * @license   http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
+ */
+ -->
+<config>
+    <modules>
+        <FireGento_SampleModule>
+            <version>0.1.0</version>
+        </FireGento_SampleModule>
+    </modules>
+    <global>
+        <blocks>
+            <firegento_samplemodule>
+                <class>FireGento_SampleModule_Block</class>
+            </firegento_samplemodule>
+        </blocks>
+        <helpers>
+            <firegento_samplemodule>
+                <class>FireGento_SampleModule_Helper</class>
+            </firegento_samplemodule>
+        </helpers>
+        <models>
+            <firegento_samplemodule>
+                <class>FireGento_SampleModule_Model</class>
+                <resourceModel>firegento_samplemodule_resource</resourceModel>
+            </firegento_samplemodule>
+            <firegento_samplemodule_resource>
+                <class>FireGento_SampleModule_Model_Resource</class>
+                <entities>
+                    <sampletable>
+                        <table>firegento_sampletable</table>
+                    </sampletable>
+                </entities>
+            </firegento_samplemodule_resource>
+        </models>
+        <resources>
+            <firegento_samplemodule_setup>
+                <setup>
+                    <module>FireGento_SampleModule</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </firegento_samplemodule_setup>
+        </resources>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <FireGento_SampleModule>
+                    <files>
+                        <default>FireGento_SampleModule.csv</default>
+                    </files>
+                </FireGento_SampleModule>
+            </modules>
+        </translate>
+        <routers>
+            <firegento_samplemodule>
+                <use>standard</use>
+                <args>
+                    <module>FireGento_SampleModule</module>
+                    <frontName>firegento_samplemodule</frontName>
+                </args>
+            </firegento_samplemodule>
+        </routers>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <FireGento_SampleModule before="Mage_Adminhtml">FireGento_SampleModule</FireGento_SampleModule>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <FireGento_SampleModule>
+                    <files>
+                        <default>FireGento_SampleModule.csv</default>
+                    </files>
+                </FireGento_SampleModule>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
