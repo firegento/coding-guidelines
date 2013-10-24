@@ -1,0 +1,16 @@
+{
+  "name": "firegento/samplemodule",
+  "license": ["GPL-3.0"],
+  "type": "magento-module",
+  "description": "This is a short description of what the module does.",
+  "homepage": "https://github.com/firegento/firegento-samplemodule",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ]
+}
