@@ -32,7 +32,7 @@ You'll find the installation instructions for PEAR in the official documentation
 ### How to install the PHP_CodeSniffer?
 You should use the following command to install the PHP CodeSniffer:
 
-```
+```bash
 pear install PHP_CodeSniffer
 ```
 
@@ -43,11 +43,15 @@ It will make the code of all our modules easier to read and maintain, especially
 ### Where is my PEAR directory located?
 You need to know the directory of your PHP_CodeSniffer install. You can do this by opening a terminal/shell and typing in the following:
 
-```pear config-get php_dir```
+```bash
+pear config-get php_dir
+```
 
 Then you should see a directory printed on the screen which represents your PEAR directory, e.g.
 
-```/usr/lib/php/pear/```
+```bash
+/usr/lib/php/pear/
+```
 
 
 ### Help! The code of my module is too messed up!
@@ -57,6 +61,6 @@ Fixing tons of coding standard problems by hand is tedious, especially on a larg
 
 You can use the following command for fixing some common coding standard problems:
 
-```
+```bash
 php-cs-fixer.phar fix path/to/module/ --fixers=indentation,linefeed,trailing_spaces,phpdoc_params,visibility,braces,include,php_closing_tag,controls_spaces,elseif,eof_ending
 ```

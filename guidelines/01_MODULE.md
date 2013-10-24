@@ -46,7 +46,7 @@ A FireGento module is located in the *community* code pool of Magento.
 
 A FireGento module must contain a proper README file which provides information what the extension does, how to install and uninstall the extension, ..
 
-You can use the [README.md](https://github.com/firegento/codingstandard/blob/master/README.md) of the FireGento_SampleModule as a template.
+You can use the [README.md](https://github.com/firegento/coding-guidelines/blob/master/sample-module/README.md) of the FireGento_SampleModule as a template.
 
 
 ### LICENSE
@@ -54,7 +54,7 @@ You can use the [README.md](https://github.com/firegento/codingstandard/blob/mas
 All FireGento modules are explicitly licensed under the General Public License, version 3 (GPLv3).
 
 Therefore, a FireGento module must contain a `LICENSE.md` file of the General Public License, version 3 (GPLv3) in the module root directory and must have the license notice in every module file.
-You can copy the license file from [here](https://github.com/firegento/codingstandard/blob/master/LICENSE.md) and check the sample module for how to implement the license docs in the module file.
+You can copy the license file from [here](https://github.com/firegento/coding-guidelines/blob/master/sample-module/LICENSE.md) and check the sample module for how to implement the license docs in the module file.
 
 
 ### modman
@@ -95,4 +95,4 @@ You can find the composer registry [here](https://github.com/magento-hackathon/c
 
 We use [phpDox](http://phpdox.de/) for the generation of the API docs of our Magento modules.
 
-You can find an example phpDox configuration file in the sample module [here](https://github.com/firegento/codingstandard/blob/master/sample-module/phpdox.xml.dist). This file should be copied to the repository root of the new FireGento module. The module name in this file has to be changed afterwards.
+You can find an example phpDox configuration file in the sample module [here](https://github.com/firegento/coding-guidelines/blob/master/sample-module/phpdox.xml.dist). This file should be copied to the repository root of the new FireGento module. The module name in this file has to be changed afterwards.
