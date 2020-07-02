@@ -32,7 +32,7 @@ The file comment has to look like this:
  * @category  FireGento
  * @package   FireGento_SampleModule
  * @author    FireGento Team <team@firegento.com>
- * @copyright 2013 FireGento Team (http://www.firegento.com)
+ * @copyright 2014 FireGento Team (http://www.firegento.com)
  * @license   http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
  */
 ```
@@ -55,7 +55,7 @@ All PHP classes must contain a class comment too. The class comment should look 
  * This comment describes what the class is for.
  *
  * @category FireGento
- * @package  FireGento_MageSetup
+ * @package  FireGento_SampleModule
  * @author   FireGento Team <team@firegento.com>
  */
 ```
@@ -86,7 +86,7 @@ All CSS, JS, PHTML (Templates) and XML files have to contain a file comment at t
  * @category  FireGento
  * @package   FireGento_SampleModule
  * @author    FireGento Team <team@firegento.com>
- * @copyright 2013 FireGento Team (http://www.firegento.com)
+ * @copyright 2014 FireGento Team (http://www.firegento.com)
  * @license   http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
  */
 ```
